@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Вычислить Куб разности</title>
+</head>
+<body>
+<h3>Вычислить куб разности двух чисел</h3>
+<input type="text" name="" placeholder="Введите первое число" id="side1" >
+<input type="text" name="" placeholder="Введите второе число" id="side2" >
+
+<button id="go">Вычислить</button>
+
+<p>Результат: </p>
+<input type="text" name="" id="Area"><br><br>
+
+</body>
+<script type="text/javascript">
+
+var side1 = document.getElementById('side1');
+var side2 = document.getElementById('side2');
+
+var Area = document.getElementById('Area');
+var go = document.getElementById('go');
+
+go.addEventListener('click', function() {
+Area.value=((side1.value**3)-(3*side1.value**2*side2.value)+(3*side1.value*side2.value**2)-(side2.value**3));
+
+});
+ 
+</script>
+</html>
